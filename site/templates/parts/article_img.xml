@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE document SYSTEM "../../units/schema/template.dtd">
+<document>
+	<div class="article_img" style="'background-image: url('.$params['image'].')'" cms:eval="style">
+		<cms:markdown param="description" multilanguage="yes"/>
+	</div>
+</document>
