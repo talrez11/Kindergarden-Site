@@ -1,0 +1,12 @@
+<svg display="none" width="0" height="0" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<defs>
+<symbol id="icon-arrow-left" viewBox="0 0 512 1024">
+	<title>arrow-left</title>
+	<path class="path1" d="M512 1024v-182.272l-329.728-329.728 329.728-329.728v-182.272l-512 512z"></path>
+</symbol>
+<symbol id="icon-arrow-right" viewBox="0 0 512 1024">
+	<title>arrow-right</title>
+	<path class="path1" d="M0 0v182.272l329.728 329.728-329.728 329.728v182.272l512-512z"></path>
+</symbol>
+</defs>
+</svg>
