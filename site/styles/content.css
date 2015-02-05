@@ -1,0 +1,499 @@
+/**
+	* Content Style Sheet
+	* Kindergarten
+	*
+	* Copyright (c) 2015. by Way2CU, http://way2cu.com
+	* Author: Khalid Sawalhi
+*/
+
+body {
+	margin: 0px;
+	padding: 0px;
+}
+
+.inner_wrap {
+	display: block;
+	max-width: 1200px;
+	margin-left: auto;
+	margin-right: auto;
+	position: relative;
+}
+
+header {
+	background: url(../images/ballon.svg), url(../images/kids.svg), url(../images/header-background.jpg);
+	background-repeat: no-repeat;
+	background-size: 550px 190px, 620px 500px, auto 800px;
+	background-position: 380px top, 300px 140px, center top;
+	min-height: 800px;
+}
+
+
+header div.inner_wrap article {
+	width: 600px;
+	text-align: right;
+	padding-top: 30px;
+	padding-right: 20px;
+	line-height: 1.1;
+	position: relative;
+}
+
+header div.inner_wrap article:after {
+	position: absolute;
+	right: 30px;
+	top: 103%;
+	content: '';
+	width: 158px;
+	height: 94px;
+	background-image: url(../images/arrow.svg);
+	background-repeat: no-repeat;
+	background-position: center top;
+	background-size: 158px 94px;
+}
+
+header div.inner_wrap article h1 {
+	margin: 0px;
+	color: white;
+	font-size: 90px;
+	 text-shadow : 2px 2px 5px rgba(0,0, 0, 0.5);
+}
+
+header div.inner_wrap article p {
+	margin: 0px;
+	padding-top: 10px;
+	font-size: 1.9rem;
+}
+
+header div.inner_wrap article p strong {
+	font-size: 2.3rem;
+}
+
+ div.inner_wrap a.phone {
+	display: block;
+	text-align: right;
+	direction: ltr;
+	margin-top: 50px;
+	margin-bottom: 50px;
+	margin-right: 200px;
+	text-decoration: none;
+	color: white;
+	background: linear-gradient(0deg, rgba(22, 166, 30, 1) 0%, rgba(118, 204, 30, 1) 100%);
+	background-repeat: no-repeat;
+	background-position:center top;
+	background-size: auto 100%;
+	width: 295px;
+	font-size: 2.8rem;
+	padding: 10px;
+	border: 2px solid white;
+	border-radius: 10px;
+	box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.6);
+	position: relative;
+	z-index: 1;
+}
+
+div.inner_wrap a.phone:hover::after {
+	opacity: 1;
+
+}
+
+a.phone:after {
+	width: 315px;
+	height: 81px;
+	content: '';
+	background: linear-gradient(0deg, #67b31a 0%, #0f7315 100%);
+	background-repeat: no-repeat;
+	background-position: center top;
+	background-size: auto 100%;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	opacity: 0;
+	transition: opacity 0.3s;
+	z-index: -1;
+	border-radius: 8px;
+}
+
+a.phone:before {
+	width: 40px;
+	height: 40px;
+	content: '';
+	position: absolute;
+	left: 10px;
+	top: 30%;
+	background-image: url(../images/icon-phone-white.svg);
+	background-position: top center;
+	background-size: 40px 40px;
+	background-repeat: no-repeat;
+	z-index: 1;
+}
+div.inner_wrap div.form_container {
+	text-align: center;
+}
+
+div.inner_wrap div.form_container > span:first-of-type {
+	display: block;
+	text-align: center;
+	color: white;
+	font-size: 2rem;
+	padding: 10px 0px;
+}
+
+div.inner_wrap div.form_container form {
+	-webkit-filter: drop-shadow(0px 0px 4px rgba(0, 0, 0, 0.4));
+	filter: drop-shadow(0px 0px 4px rgba(0, 0, 0, 0.4));
+}
+
+div.inner_wrap div.form_container form label,
+div.inner_wrap div.form_container form div.controls,
+div.inner_wrap div.form_container form label input,
+div.inner_wrap div.form_container form label span {
+	display: inline-block;
+	vertical-align: middle;
+}
+
+
+div.inner_wrap div.form_container form label input {
+	background-color: white;
+	opacity: 0.7;
+	padding: 17px 10px;
+	font-size: 1.3rem;
+	transition: 0.5s all;
+	border: 1px solid #33485d
+}
+
+div.inner_wrap div.form_container form label input:focus {
+	border-color: #e57d21;
+}
+
+div.inner_wrap div.form_container form label span {
+	background-color: white;
+	padding: 15px 13px;
+	font-size: 1.3rem;
+}
+
+div.inner_wrap div.form_container form > label:nth-of-type(1) span {
+	border-right: 1px solid #33485d;
+	border-bottom-right-radius: 10px;
+	border-top-right-radius: 10px;
+}
+
+div.inner_wrap div.form_container form div.controls button.submit {
+	display: block;
+	text-align: right;
+	text-decoration: none;
+	color: white;
+	background: linear-gradient(0deg, rgba(22, 166, 30, 1) 0%, rgba(118, 204, 30, 1) 100%);
+	background-repeat: no-repeat;
+	background-position: center top;
+	background-size: auto 100%;
+	font-size: 1.2rem;
+	padding: 18px 10px;
+	border: 1px solid rgba(22, 166, 30, 1);
+	border-top-left-radius: 10px;
+	border-bottom-left-radius: 10px;
+	position: relative;
+	cursor: pointer;
+	transition: 0.5s all;
+	z-index: 1;
+}
+
+div.inner_wrap div.form_container form div.controls button.submit:after {
+	background: linear-gradient(0deg, rgba(118, 204, 30, 1) 0%, rgba(22, 166, 30, 1) 100% );
+	background-repeat: no-repeat;
+	background-position: center top;
+	background-size: auto 100%;
+	border-top-left-radius: 9px;
+	border-bottom-left-radius: 9px;
+	position: absolute;
+	top: 0px;
+	right: -1px;
+	width: 98px;
+	height: 59px;
+	content: '';
+	opacity: 0;
+	transition: opacity 0.3s;
+	z-index: -1;
+}
+
+div.inner_wrap div.form_container form div.controls button.submit:hover::after {
+	opacity: 1;
+}
+
+div.wrap.girl {
+	background-image: url(../images/background-girl.jpg);
+	background-repeat: no-repeat;
+	background-position: center top;
+	background-size: auto 700px;
+	box-shadow: inset 30px 28px 20px -33px #696868;
+}
+
+div.wrap.girl div.inner_wrap div.article {
+	width: 570px;
+	padding-top: 220px;
+	padding-bottom: 220px;
+	text-align: right;
+}
+
+div.wrap.girl div.inner_wrap div.article p {
+	margin: 0px;
+	font-size: 2rem;
+}
+
+div.wrap.boy {
+	background-image: url(../images/background-boy.jpg);
+	background-repeat: no-repeat;
+	background-position: center top;
+	background-size: auto 600px;
+}
+
+div.wrap.boy div.inner_wrap div.article {
+	width: 650px;
+	margin: 0px auto;
+	margin-right: 560px;
+	padding: 145px 0px;
+	text-align: right;
+}
+
+div.wrap.boy div.inner_wrap div.article p {
+	margin: 0px;
+	font-size: 2rem;
+}
+
+div.wrap.gallery {
+	background-image: url(../images/background-gallery.jpg);
+	background-repeat: no-repeat;
+	background-position: center top;
+	background-size: auto 700px;
+	min-height: 830px;
+}
+
+div.wrap.gallery div.inner_wrap > h2 {
+	text-align: center;
+	margin: 0px auto;
+	font-size: 2rem;
+}
+
+div.wrap.gallery div.inner_wrap div.gallery_container {
+	position: relative;
+	text-align: center;
+	overflow: hidden;
+	margin-top: 50px;
+	margin-bottom: 50px
+}
+
+ a.arrow {
+	position: absolute;
+	left: 0px;
+	top: 40%;
+	width: 50px;
+	height: 50px;
+	fill:#16458e;
+}
+
+ a.arrow svg {
+	width: 50px;
+	height: 50px;
+}
+
+ a.arrow.next {
+	right: 0px;
+}
+
+div.wrap.gallery div.inner_wrap div.gallery_container a.image.direct {
+	display: inline-block;
+	vertical-align: top;
+	width: 360px;
+	height: 180px;
+	margin: 0px 20px
+}
+
+div.wrap.gallery div.inner_wrap div.gallery_container a.image.direct img {
+	width: 360px;
+	height: 180px;
+	border:2px solid white
+}
+
+
+div.wrap.gallery div.inner_wrap div.gallery_container a.image.direct.transit {
+	transition: none;
+}
+
+div.wrap.gallery div.inner_wrap div.tips_container {
+	position: relative;
+	text-align: center;
+}
+
+div.wrap.gallery div.inner_wrap div.tips_container div.article {
+	display: block;
+	width: 800px;
+	margin: 0px auto;
+	border: 1px solid #16458e;
+	border-radius: 10px;
+	background-color: white;
+	padding: 20px;
+	position: absolute;
+	top: 30px;
+	left: 50%;
+	opacity: 0;
+	margin-left: -400px;
+	transition: opacity 0.3s;
+}
+
+div.wrap.gallery div.inner_wrap div.tips_container div.article.visible {
+	opacity: 1;
+}
+
+div.wrap.gallery div.inner_wrap div.tips_container div.article p {
+	margin: 0px;
+	padding: 10px 0px;
+	font-size: 1.3rem;
+}
+
+div.wrap.gallery div.inner_wrap div.tips_container a.arrow {
+	top: 200px;
+}
+
+div.wrap.white {
+	background-color: white;
+	background-image: url(../images/footer.jpg);
+	background-repeat: no-repeat;
+	background-position: center bottom;
+	background-size: auto 600px;
+	min-height: 1200px;
+}
+
+div.wrap.white div.inner_wrap div.article_img {
+	background-repeat: no-repeat;
+	background-size: 500px 500px;
+	background-position: left center;
+	text-align: right;
+}
+
+div.wrap.white div.inner_wrap div.article_img p {
+	margin: 0px;
+	font-size: 2rem;
+	width: 600px;
+	padding: 20px 0px;
+}
+
+div.wrap.white div.inner_wrap > span {
+	display: block;
+	padding: 10px 0px;
+	font-size: 2rem;
+	text-align: right;
+}
+
+div.wrap.white div.inner_wrap > span:first-of-type {
+	margin-top: 50px;
+	background-image: url(../images/logo-footer.svg);
+	background-repeat: no-repeat;
+	background-position: right top;
+	background-size: 370px 160px;
+	padding-top: 180px;
+}
+
+div.wrap.white div.inner_wrap a.phone {
+	margin: 0px;
+	margin-top: 20px;
+}
+
+div.wrap.blue {
+	background-color: #287fb8;
+}
+
+div.wrap.blue div.inner_wrap div.form_container {
+	padding-bottom: 20px;
+}
+
+footer {
+	background-color: black;
+}
+
+footer div.inner_wrap div.copyright_container {
+	background-image: url(../images/way2cu-color.svg);
+	background-repeat: no-repeat;
+	background-position: left center;
+	background-size: auto 50px;
+	padding: 10px;
+	padding-left: 60px;
+	max-width: 500px;
+	text-align: left;
+	color: white;
+	direction: ltr;
+	margin: 0px auto;
+}
+
+footer div.inner_wrap div.copyright_container a , footer div.inner_wrap div.copyright_container span {
+	display: inline-block;
+	vertical-align: top;
+	text-decoration: none;
+	color: white;
+	padding: 0px 2px;
+	transition: 0.3s all;
+}
+
+footer div.inner_wrap div.copyright_container a:nth-of-type(2) {
+	color: gold;
+}
+
+footer div.inner_wrap div.copyright_container a:hover {
+	color: #287fb8;
+	text-decoration: underline;
+}
+
+footer div.inner_wrap div.copyright_container span:nth-of-type(2) {
+	display: block;
+}
+
+
+@media (max-width: 1200px) {
+	header{
+		background-size: 540px 190px, 420px 480px, auto 800px;
+		background-position: 30px top, 10px 160px, center top;
+	}
+
+	header div.inner_wrap article {
+		width: 420px;
+	}
+
+	header div.inner_wrap article h1 {
+		font-size: 60px;
+	}
+
+	header div.inner_wrap article p {
+		font-size: 1.4rem;
+		padding-top: 40px;
+	}
+
+	div.inner_wrap div.form_container > span:first-of-type {
+		padding-top: 60px;
+	}
+
+	div.inner_wrap div.form_container form label input {
+		font-size: 1rem;
+		padding: 20px 10px;
+	}
+
+	div.wrap.girl div.inner_wrap div.article {
+		padding-right: 20px;
+	}
+
+	div.wrap.boy {
+		background-image: url(../images/background-boy-ipad.jpg);
+		background-position: -690px top;
+	}
+
+	div.wrap.boy div.inner_wrap div.article {
+		width: 410px;
+		margin-right: 520px;
+		padding: 50px 0px;
+	}
+
+	div.wrap.white div.inner_wrap {
+		padding: 0px 10px;
+	}
+
+	div.wrap.white div.inner_wrap div.article_img p {
+		font-size: 1.6rem;
+		width: 430px;
+	}
+}
