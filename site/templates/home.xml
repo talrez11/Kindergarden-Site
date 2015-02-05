@@ -5,11 +5,150 @@
 	<html lang="$language" cms:eval="lang">
 		<head>
 			<title><cms:text constant="site_title"/></title>
+			<cms:collection include="page_control,animation_chain"/>
 			<cms:module name="head_tag" action="print_tag"/>
 		</head>
 
 		<body class="$language_rtl ? 'rtl' : 'ltr'" cms:eval="class">
-			<h1>It works!</h1>
+			<cms:svg file="svg-arrows.svg"/>
+			<header>
+				<div class="inner_wrap">
+					<cms:module
+						name="articles"
+						action="show"
+						text_id="header_text"
+					/>
+					<a
+						href="'tel:'.urlencode(Language::getText('phone'))"
+						cms:eval="href"
+						class="phone"
+						>
+							<cms:text constant="phone"/>
+					</a>
+					<div class="form_container">
+						<span><cms:text constant="fill_form"/></span>
+							<cms:module
+								name="contact_form"
+								action="show"
+								text_id="contact_form"
+								/>
+					</div>
+				</div>
+			</header>
+			<div class="wrap girl">
+				<div class="inner_wrap">
+					<cms:module
+						name="articles"
+						action="show"
+						text_id="girl_text"
+						template="parts/article_no_h.xml"
+					/>
+				</div>
+			</div>
+			<div class="wrap boy">
+				<div class="inner_wrap">
+					<cms:module
+						name="articles"
+						action="show"
+						text_id="boy_text"
+						template="parts/article_no_h.xml"
+					/>
+				</div>
+			</div>
+			<div class="wrap gallery">
+				<div class="inner_wrap">
+					<h2><cms:text constant="our_gallery"/></h2>
+					<div class="gallery_container">
+						<cms:module
+							name="gallery"
+							action="show_image_list"
+							group="home_gallery"
+							random="1"
+							template="parts/image.xml"
+							/>
+						<a
+							href="javascript: void(0);"
+							class="arrow next"
+							>
+							<svg><use xlink:href="#icon-arrow-right"/></svg>
+						</a>
+						<a
+							href="javascript: void(0);"
+							class="arrow previous"
+							>
+							<svg><use xlink:href="#icon-arrow-left"/></svg>
+						</a>
+					</div>
+					<h2><cms:text constant="parents_said"/></h2>
+					<div class="tips_container">
+						<cms:module
+							name="tips"
+							action="show_list"
+							text_id="tips"
+							template="parts/article_no_h.xml"
+							/>
+							<a
+								href="javascript: void(0);"
+								class="arrow next"
+								>
+								<svg><use xlink:href="#icon-arrow-right"/></svg>
+							</a>
+							<a
+								href="javascript: void(0);"
+								class="arrow previous"
+								>
+								<svg><use xlink:href="#icon-arrow-left"/></svg>
+							</a>
+					</div>
+				</div>
+			</div>
+			<div class="wrap white">
+				<div class="inner_wrap">
+					<cms:module
+						name="gallery"
+						action="show_image"
+						text_id="article_img"
+						template="parts/article_img.xml"
+						/>
+						<span><cms:text constant="come_see_u"/></span>
+						<span><cms:text constant="come_see_u_one"/></span>
+						<a
+							href="'tel:'.urlencode(Language::getText('phone'))"
+							cms:eval="href"
+							class="phone"
+							>
+								<cms:text constant="phone"/>
+						</a>
+				</div>
+			</div>
+			<div class="wrap blue">
+				<div class="inner_wrap">
+					<div class="form_container">
+						<span><cms:text constant="fill_form"/></span>
+							<cms:module
+								name="contact_form"
+								action="show"
+								text_id="contact_form"
+								/>
+					</div>
+				</div>
+			</div>
+			<footer>
+				<div class="inner_wrap">
+					<div class="copyright_container">
+						<cms:text constant="copyright_way2cu"/>
+						<cms:raw text="&amp;nbsp;"/>
+						<a href="http://way2cu.com" target="_blank">
+							<cms:text constant="way2cu"/>
+						</a>
+						<span><cms:text constant="promoted"/></span>
+						<a href="http://oxerve.com" target="_blank">
+							<cms:text constant="oxerve"/>
+						</a>
+						<span><cms:text constant="copyright_rights"/></span>
+					</div>
+				</div>
+			</footer>
 		</body>
 	</html>
 </document>
