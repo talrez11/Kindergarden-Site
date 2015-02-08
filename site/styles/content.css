@@ -331,7 +331,6 @@ div.wrap.gallery div.inner_wrap div.tips_container div.article {
 	border: 1px solid #16458e;
 	border-radius: 10px;
 	background-color: white;
-	padding: 20px;
 	position: absolute;
 	top: 30px;
 	left: 50%;
@@ -340,13 +339,21 @@ div.wrap.gallery div.inner_wrap div.tips_container div.article {
 	transition: opacity 0.3s;
 }
 
+div.wrap.gallery div.inner_wrap div.tips_container a.arrow {
+	left: 30px;
+}
+
+div.wrap.gallery div.inner_wrap div.tips_container a.arrow.next {
+	right: 30px;
+}
+
 div.wrap.gallery div.inner_wrap div.tips_container div.article.visible {
 	opacity: 1;
 }
 
 div.wrap.gallery div.inner_wrap div.tips_container div.article p {
 	margin: 0px;
-	padding: 10px 0px;
+	padding: 20px;
 	font-size: 1.3rem;
 }
 
