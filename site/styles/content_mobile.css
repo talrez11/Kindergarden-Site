@@ -290,23 +290,19 @@ div.wrap.gallery div.inner_wrap div.gallery_container a.image.direct.transit {
 div.wrap.gallery div.inner_wrap div.tips_container {
 	position: relative;
 	text-align: center;
+	padding-bottom: 20px;
 }
 
 div.wrap.gallery div.inner_wrap div.tips_container div.article {
-	display: block;
-	width: 250px;
+	display: none;
 	margin: 0px auto;
+	padding:10px;
 	background-color: white;
-	visibility: hidden;
-	position: absolute;
-	top: 60px;
-	left: 50%;
-	margin-left: -125px;
-	transition: visibility 0.3s
+	transition: display 0.3s
 }
 
 div.wrap.gallery div.inner_wrap div.tips_container div.article.visible {
-	visibility: visible;
+	display: block;
 }
 
 div.wrap.gallery div.inner_wrap div.tips_container div.article p {
