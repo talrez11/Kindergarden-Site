@@ -297,16 +297,16 @@ div.wrap.gallery div.inner_wrap div.tips_container div.article {
 	width: 250px;
 	margin: 0px auto;
 	background-color: white;
+	visibility: hidden;
 	position: absolute;
 	top: 60px;
 	left: 50%;
-	opacity: 0;
 	margin-left: -125px;
-	transition: opacity 0.3s
+	transition: visibility 0.3s
 }
 
 div.wrap.gallery div.inner_wrap div.tips_container div.article.visible {
-	opacity: 1;
+	visibility: visible;
 }
 
 div.wrap.gallery div.inner_wrap div.tips_container div.article p {
