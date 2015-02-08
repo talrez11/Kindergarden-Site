@@ -12,6 +12,16 @@
 		<body class="$language_rtl ? 'rtl' : 'ltr'" cms:eval="class">
 			<cms:svg file="svg-arrows.svg"/>
 			<header>
+				<cms:mobile>
+				<div class="mobile_title">
+					<a
+						href="'tel:'.urlencode(Language::getText('phone'))"
+						cms:eval="href"
+						class="phone_title"
+						>
+					</a>
+				</div>
+				</cms:mobile>
 				<div class="inner_wrap">
 					<cms:module
 						name="articles"
