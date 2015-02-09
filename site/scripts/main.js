@@ -92,8 +92,8 @@ Site.on_load = function() {
 		gallery.images.set_center(true)
 		gallery.images.set_spacing(20)
 		gallery.images.set_visible_count(3)
-		gallery.images.attachNextControl($('div.gallery_container a.arrow.next'))
-		gallery.images.attachPreviousControl($('div.gallery_container a.arrow.previous'));
+		.controls.attach_next($('div.gallery_container a.arrow.next'))
+		.controls.attach_previous($('div.gallery_container a.arrow.previous'));
 	};
 };
 
