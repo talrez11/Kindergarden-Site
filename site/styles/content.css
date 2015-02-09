@@ -278,6 +278,7 @@ div.wrap.gallery div.inner_wrap div.gallery_container {
 	position: relative;
 	text-align: center;
 	overflow: hidden;
+	height: 200px;
 	margin-top: 50px;
 	margin-bottom: 50px
 }
@@ -285,7 +286,7 @@ div.wrap.gallery div.inner_wrap div.gallery_container {
  a.arrow {
 	position: absolute;
 	left: 0px;
-	top: 40%;
+	top: 30%;
 	width: 50px;
 	height: 50px;
 	fill:#16458e;
@@ -300,17 +301,19 @@ div.wrap.gallery div.inner_wrap div.gallery_container {
 	right: 0px;
 }
 
+
 div.wrap.gallery div.inner_wrap div.gallery_container a.image.direct {
-	display: inline-block;
-	vertical-align: top;
-	width: 360px;
-	height: 180px;
-	margin: 0px 20px
+	position: absolute;
+	top: 0px;
+	right: 1200px;
+	width: 270px;
+
+	transition: 0.3s all;
 }
 
 div.wrap.gallery div.inner_wrap div.gallery_container a.image.direct img {
-	width: 360px;
-	height: 180px;
+	width: 260px;
+	height: 150px;
 	border:2px solid white
 }
 
