@@ -71,7 +71,7 @@ function toggle_mobile_contact_form() {
  * Function called when document and images have been completely loaded.
  */
 Site.on_load = function() {
-<<<<<<< HEAD
+
 
 	if ($('div.tips_container div.article').length > 1) {
 		Caracal.testimonial_pages = new PageControl('div.tips_container', 'div.article')
@@ -96,10 +96,10 @@ Site.on_load = function() {
 		.controls.attach_next($('div.gallery_container a.arrow.next'))
 		.controls.attach_previous($('div.gallery_container a.arrow.previous'));
 	};
-=======
+
 	if (Site.is_mobile())
 		Site.mobile_menu = new Caracal.MobileMenu();
->>>>>>> 88bff37bd064a9297e7ea639e91ffed26fe941f4
+
 };
 
 
