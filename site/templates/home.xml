@@ -145,17 +145,8 @@
 			</div>
 			<footer>
 				<div class="inner_wrap">
-					<div class="copyright_container">
-						<cms:text constant="copyright_way2cu"/>
-						<cms:raw text="&amp;nbsp;"/>
-						<a href="http://way2cu.com" target="_blank">
-							<cms:text constant="way2cu"/>
-						</a>
-						<span><cms:text constant="promoted"/></span>
-						<a href="http://oxerve.com" target="_blank">
-							<cms:text constant="oxerve"/>
-						</a>
-						<span><cms:text constant="copyright_rights"/></span>
+					<div class="copyright">
+						<span><cms:text constant="copyright"/></span>
 					</div>
 				</div>
 			</footer>
