@@ -20,10 +20,10 @@ body {
 }
 
 header {
-	background: url(../images/ballon.svg), url(../images/kids.svg), url(../images/header-background.jpg);
+	background: url(../images/header-background.jpg);
 	background-repeat: no-repeat;
-	background-size: 550px 190px, 620px 500px, auto 800px;
-	background-position: 380px top, 300px 140px, center top;
+	background-size:auto 800px;
+	background-position:center top;
 	min-height: 800px;
 }
 
@@ -37,10 +37,24 @@ header div.inner_wrap article {
 	position: relative;
 }
 
+header div.inner_wrap article:before {
+    content: "";
+    position: absolute;
+    bottom: -150px;
+    right: 100%;
+    background-image: url(../images/kids.svg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 630px 500px;
+    width: 630px;
+    height: 500px;
+
+}
+
 header div.inner_wrap article:after {
 	position: absolute;
 	right: 30px;
-	top: 103%;
+	top: 100%;
 	content: '';
 	width: 158px;
 	height: 94px;
@@ -54,7 +68,22 @@ header div.inner_wrap article h1 {
 	margin: 0px;
 	color: white;
 	font-size: 90px;
-	 text-shadow : 2px 2px 5px rgba(0,0, 0, 0.5);
+	text-shadow : 2px 2px 5px rgba(0,0, 0, 0.5);
+	position:relative;
+}
+
+header div.inner_wrap article h1:after {
+	content: "";
+	position: absolute;
+	top:0px;
+	right:100%;
+	background-image: url(../images/ballon.svg);
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: 540px 150px;
+
+	width: 540px;
+	height: 150px;
 }
 
 header div.inner_wrap article p {
@@ -72,7 +101,7 @@ header div.inner_wrap article p strong {
 	text-align: right;
 	direction: ltr;
 	margin-top: 50px;
-	margin-bottom: 50px;
+	margin-bottom: 10px;
 	margin-right: 200px;
 	text-decoration: none;
 	color: white;
@@ -179,7 +208,6 @@ div.inner_wrap div.form_container form > label:nth-of-type(1) span {
 div.inner_wrap div.form_container form div.controls button.submit {
 	display: block;
 	text-align: right;
-	width: 106px;
 	height: 61px;
 	text-decoration: none;
 	color: white;
@@ -229,10 +257,10 @@ div.wrap.girl {
 }
 
 div.wrap.girl div.inner_wrap div.article {
-	width: 570px;
-	padding-top: 215px;
-	padding-bottom: 215px;
-	text-align: right;
+    width: 570px;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    text-align: right;
 }
 
 div.wrap.girl div.inner_wrap div.article p {
@@ -241,17 +269,17 @@ div.wrap.girl div.inner_wrap div.article p {
 }
 
 div.wrap.boy {
-	background-image: url(../images/background-boy.jpg);
-	background-repeat: no-repeat;
-	background-position: center top;
-	background-size: auto 600px;
+    background-image: url(../images/background-boy.jpg);
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: auto 600px;
+    min-height: 600px;
 }
 
 div.wrap.boy div.inner_wrap div.article {
 	width: 650px;
 	margin: 0px auto;
 	margin-right: 560px;
-	padding: 140px 0px;
 	text-align: right;
 }
 
@@ -280,7 +308,8 @@ div.wrap.gallery div.inner_wrap div.gallery_container {
 	overflow: hidden;
 	height: 200px;
 	margin-top: 50px;
-	margin-bottom: 50px
+	margin-bottom: 50px;
+	overflow: hidden;
 }
 
  a.arrow {
