@@ -447,41 +447,40 @@ div.wrap.blue div.inner_wrap div.form_container {
 
 footer {
 	background-color: black;
+	text-align: center;
 }
 
-footer div.inner_wrap div.copyright_container {
+footer div.copyright {
+	display: block;
+	background-color: black;
+	direction: ltr;
+}
+
+div.copyright span {
+	display: inline-block;
+	vertical-align: middle;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	padding-left: 40px;
 	background-image: url(../images/way2cu-color.svg);
 	background-repeat: no-repeat;
 	background-position: left center;
-	background-size: auto 50px;
-	padding: 10px;
-	padding-left: 60px;
-	max-width: 500px;
+	background-size: 30px 34.5px;
+	font-size: 0.9em;
+	color: white;
 	text-align: left;
-	color: white;
-	direction: ltr;
-	margin: 0px auto;
+	width: 270px;
 }
 
-footer div.inner_wrap div.copyright_container a , footer div.inner_wrap div.copyright_container span {
+div.copyright span a {
 	display: inline-block;
-	vertical-align: top;
-	text-decoration: none;
-	color: white;
-	padding: 0px 2px;
-	transition: 0.3s all;
-}
-
-footer div.inner_wrap div.copyright_container a:nth-of-type(2) {
-	color: gold;
-}
-
-footer div.inner_wrap div.copyright_container a:hover {
-	color: #287fb8;
+	padding-left: 5px;
 	text-decoration: underline;
+	color:#449bb5;
+	transition:all 0.3s;
 }
 
-footer div.inner_wrap div.copyright_container span:nth-of-type(2) {
-	display: block;
+div.copyright span a:hover {
+	color:#5bc2d8;
 }
 
