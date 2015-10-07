@@ -27,6 +27,7 @@
 						name="articles"
 						action="show"
 						text_id="header_text"
+						template="parts/article.xml"
 					/>
 					<a
 						href="'tel:'.urlencode(Language::getText('phone'))"
@@ -115,10 +116,10 @@
 			<div class="wrap white">
 				<div class="inner_wrap">
 					<cms:module
-						name="gallery"
-						action="show_image"
-						text_id="article_img"
-						template="parts/article_img.xml"
+						name="articles"
+						action="show"
+						text_id="about_us"
+						template="parts/article.xml"
 						/>
 						<span><cms:text constant="come_see_u"/></span>
 						<span><cms:text constant="come_see_u_one"/></span>
