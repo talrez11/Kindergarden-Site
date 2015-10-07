@@ -1,12 +1,12 @@
 ---
 site:
-  domain: sample.com
+  domain: ganharmonia.co.il
   # subdomain: test
   make_alias: false
   root: httpdocs
-  username: "sample"
+  username: "ganharmonia"
   caracal_branch: develop
-  # ip_address: 0.0.0.0
+  ip_address: 74.208.153.118
   # owner: Some Person
   # plan: Unlimited
 
