@@ -121,6 +121,12 @@
 						text_id="about_us"
 						template="parts/article.xml"
 						/>
+					<cms:module
+							name="gallery"
+							action="show_image"
+							text_id="gan_harmonia"
+							template="parts/image2.xml"
+							/>	
 						<span><cms:text constant="come_see_u"/></span>
 						<span><cms:text constant="come_see_u_one"/></span>
 						<a
