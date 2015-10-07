@@ -24,7 +24,7 @@ body {
 
 .mobile_title {
 	background-color: white;
-	background-image: url(../images/nav-mobile.svg);
+	background-image: url(../images/mobile-top-nav.svg);
 	background-size: 100% auto;
 	height: 75px;
 	z-index: 10000;
@@ -46,11 +46,11 @@ body {
 
 
 header {
-	background: url(../images/header-background.jpg);
-	background-repeat: no-repeat;
-	background-size:auto 1080px;
-	background-position:center top;
-	background-color: white;
+    background: url(../images/logo-idea.png),url(../images/header-background.jpg);
+    background-repeat: no-repeat;
+    background-size: 275px 290px ,auto 1100px;
+    background-position: center 550px ,center top;
+    background-color: white;
 }
 
 header div.inner_wrap article {
@@ -65,9 +65,10 @@ header div.inner_wrap article {
 
 header div.inner_wrap article h3 {
 	margin: 0px;
+	padding-bottom: 20px;
 	color: white;
 	font-size: 1.5rem;
-	 text-shadow : 2px 2px 5px rgba(0,0, 0, 0.5);
+	text-shadow : 2px 2px 5px rgba(0,0, 0, 0.5);
 }
 
 header div.inner_wrap article p {
@@ -108,6 +109,20 @@ header div.inner_wrap article p a {
  	box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.6);
  	position: relative;
  	z-index: 1;
+}
+
+div.inner_wrap a.phone:after {
+	content: "";
+	position: absolute;
+	top: 130%;
+	left: 50%;
+	margin-left: -150px;
+	background-image: url(../images/ballon.svg);
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: 300px 82px;
+	width: 300px;
+	height: 82px;
 }
 
 
@@ -329,12 +344,12 @@ div.wrap.gallery div.inner_wrap div.tips_container a.arrow {
 
 
 div.wrap.white {
-	background-color: white;
-	background-image: url(../images/footer-mobile.jpg);
-	background-repeat: no-repeat;
-	background-position: center bottom;
-	background-size: 100% auto;
-	min-height: 1200px;
+    background-color: white;
+    background-image: url(../images/logo-idea.png),url(../images/footer-mobile.jpg);
+    background-repeat: no-repeat;
+    background-position: center 950px, center bottom;
+    background-size: 275px 290px, 100% auto;
+    min-height: 1350px;
 }
 
 div.wrap.white div.inner_wrap article {
@@ -356,16 +371,13 @@ div.wrap.white div.inner_wrap figure {
 	margin-left: auto;
 	margin-right: auto;
 	text-align: center;
-	margin: 0px;
-	width:95%;
+	width:100%;
 
 }
 
 div.wrap.white div.inner_wrap figure img {
-	display: block;
-	padding-top: 20px;
-	margin-left: auto;
-	margin-right: auto;	
+	width: 100%;
+	height: auto;	
 }
 
 div.wrap.white div.inner_wrap > span {
