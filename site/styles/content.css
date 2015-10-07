@@ -37,19 +37,6 @@ header div.inner_wrap article {
 	position: relative;
 }
 
-header div.inner_wrap article:before {
-    content: "";
-    position: absolute;
-    bottom: -150px;
-    right: 100%;
-    background-image: url(../images/kids.svg);
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-size: 630px 500px;
-    width: 630px;
-    height: 500px;
-
-}
 
 header div.inner_wrap article:after {
 	position: absolute;
@@ -423,14 +410,6 @@ div.wrap.white div.inner_wrap > span {
 	text-align: right;
 }
 
-div.wrap.white div.inner_wrap > span:first-of-type {
-	margin-top: 50px;
-	background-image: url(../images/logo-footer.svg);
-	background-repeat: no-repeat;
-	background-position: right top;
-	background-size: 370px 160px;
-	padding-top: 180px;
-}
 
 div.wrap.white div.inner_wrap a.phone {
 	margin: 0px;
