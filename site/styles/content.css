@@ -31,7 +31,7 @@ header {
 header div.inner_wrap article {
 	width: 600px;
 	text-align: right;
-	padding-top: 30px;
+	padding-top: 80px;
 	padding-right: 20px;
 	line-height: 1.1;
 	position: relative;
@@ -51,15 +51,16 @@ header div.inner_wrap article:after {
 	background-size: 158px 94px;
 }
 
-header div.inner_wrap article h1 {
+header div.inner_wrap article h3 {
 	margin: 0px;
+	margin-bottom: 50px;
 	color: white;
-	font-size: 90px;
+	font-size: 2.3em;
 	text-shadow : 2px 2px 5px rgba(0,0, 0, 0.5);
 	position:relative;
 }
 
-header div.inner_wrap article h1:after {
+header div.inner_wrap article h3:after {
 	content: "";
 	position: absolute;
 	top:0px;
@@ -88,7 +89,7 @@ header div.inner_wrap article p strong {
 	text-align: right;
 	direction: ltr;
 	margin-top: 50px;
-	margin-bottom: 10px;
+	margin-bottom: 50px;
 	margin-right: 200px;
 	text-decoration: none;
 	color: white;
@@ -236,21 +237,22 @@ div.inner_wrap div.form_container form div.controls button.submit:hover::after {
 }
 
 div.wrap.girl {
-	background-image: url(../images/background-girl.jpg);
-	background-repeat: no-repeat;
-	background-position: center top;
-	background-size: auto 700px;
-	box-shadow: inset 30px 28px 20px -33px #696868;
+    background-image: url(../images/background-girl.jpg);
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: auto 700px;
+    box-shadow: inset 30px 28px 20px -33px #696868;
+    min-height: 700px;
 }
 
 div.wrap.girl div.inner_wrap div.article {
     width: 570px;
-    padding-top: 100px;
+    padding-top: 50px;
     padding-bottom: 100px;
     text-align: right;
 }
 
-div.wrap.girl div.inner_wrap div.article p {
+div.wrap.girl div.inner_wrap div.article li {
 	margin: 0px;
 	font-size: 2rem;
 }
@@ -264,13 +266,15 @@ div.wrap.boy {
 }
 
 div.wrap.boy div.inner_wrap div.article {
-	width: 650px;
-	margin: 0px auto;
-	margin-right: 560px;
-	text-align: right;
+    width: 650px;
+    margin: 0px auto;
+    margin-right: 560px;
+    text-align: right;
+    padding-top: 50px;
+    padding-bottom: 50px;
 }
 
-div.wrap.boy div.inner_wrap div.article p {
+div.wrap.boy div.inner_wrap div.article li {
 	margin: 0px;
 	font-size: 2rem;
 }
@@ -389,18 +393,12 @@ div.wrap.white {
 	min-height: 1200px;
 }
 
-div.wrap.white div.inner_wrap div.article_img {
-	background-repeat: no-repeat;
-	background-size: 500px 500px;
-	background-position: left center;
-	text-align: right;
-}
 
-div.wrap.white div.inner_wrap div.article_img p {
-	margin: 0px;
-	font-size: 2rem;
-	width: 600px;
-	padding: 20px 0px;
+div.wrap.white div.inner_wrap article p {
+    margin: 0px;
+    font-size: 1.8rem;
+    width: 900px;
+    padding: 20px 0px;
 }
 
 div.wrap.white div.inner_wrap > span {
