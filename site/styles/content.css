@@ -84,6 +84,13 @@ header div.inner_wrap article p strong {
 	font-size: 2.3rem;
 }
 
+header div.inner_wrap article p a {
+	display: inline-block;
+	vertical-align: top;
+	text-decoration: none;
+	color:#16458e;
+}
+
  div.inner_wrap a.phone {
 	display: block;
 	text-align: right;
@@ -393,12 +400,34 @@ div.wrap.white {
 	min-height: 1200px;
 }
 
+div.wrap.white div.inner_wrap article {
+	display: inline-block;
+	vertical-align: top;
+	width: 600px;
+}
+
 
 div.wrap.white div.inner_wrap article p {
     margin: 0px;
     font-size: 1.8rem;
-    width: 900px;
     padding: 20px 0px;
+}
+
+div.wrap.white div.inner_wrap figure {
+	display: inline-block;
+	vertical-align: top;
+	text-align: center;
+	margin: 0px;
+	width: 600px;
+}
+
+div.wrap.white div.inner_wrap figure img {
+	display: block;
+	padding-top: 20px;
+	margin-left: auto;
+	margin-right: auto;
+	
+	
 }
 
 div.wrap.white div.inner_wrap > span {
