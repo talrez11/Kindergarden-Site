@@ -40,7 +40,7 @@ header div.inner_wrap article {
 header div.inner_wrap article:before {
 	content: "";
     position: absolute;
-    top: 180px;
+    top: 150px;
     right: 105%;
     background-image: url(../images/logo-idea.png);
     background-repeat: no-repeat;
@@ -76,7 +76,7 @@ header div.inner_wrap article h3 {
 header div.inner_wrap article h3:after {
 	content: "";
 	position: absolute;
-	top:0px;
+	top:-40px;
 	right:100%;
 	background-image: url(../images/ballon.svg);
 	background-repeat: no-repeat;
