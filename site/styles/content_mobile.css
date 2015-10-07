@@ -46,10 +46,10 @@ body {
 
 
 header {
-	background: url(../images/ballon.svg), url(../images/kids.svg), url(../images/header-background.jpg);
+	background: url(../images/header-background.jpg);
 	background-repeat: no-repeat;
-	background-size: 310px 160px, 310px 260px, auto 1080px;
-	background-position: center 500px, center 650px, center top;
+	background-size:auto 1080px;
+	background-position:center top;
 	background-color: white;
 }
 
@@ -63,21 +63,27 @@ header div.inner_wrap article {
 }
 
 
-header div.inner_wrap article h1 {
+header div.inner_wrap article h3 {
 	margin: 0px;
 	color: white;
-	font-size: 2rem;
+	font-size: 1.5rem;
 	 text-shadow : 2px 2px 5px rgba(0,0, 0, 0.5);
 }
 
 header div.inner_wrap article p {
 	margin: 0px;
 	padding-top: 10px;
-	font-size: 1.3rem;
+	font-size: 1rem;
 }
 
 header div.inner_wrap article p strong {
 	font-size: 1.7rem;
+}
+
+header div.inner_wrap article p a {
+	display: inline-block;
+	vertical-align: middle;
+	color:#16458e;
 }
 
 
@@ -86,8 +92,8 @@ header div.inner_wrap article p strong {
  	text-align: right;
  	direction: ltr;
  	margin: 0px auto;
- 	margin-top: 50px;
- 	margin-bottom: 50px;
+ 	margin-top: 25px;
+ 	margin-bottom: 25px;
  	text-decoration: none;
  	color: white;
  	background: linear-gradient(0deg, rgba(22, 166, 30, 1) 0%, rgba(118, 204, 30, 1) 100%);
@@ -194,6 +200,10 @@ div.wrap.girl {
 div.wrap.girl div.inner_wrap div.article {
 	padding-top: 230px;
 	text-align: right;
+}
+
+div.wrap.girl div.inner_wrap div.article ul {
+	margin: 0px;
 }
 
 div.wrap.girl div.inner_wrap div.article p {
@@ -310,7 +320,7 @@ div.wrap.gallery div.inner_wrap div.tips_container div.article.visible {
 div.wrap.gallery div.inner_wrap div.tips_container div.article p {
 	margin: 0px;
 	padding: 10px;
-	font-size: 1.3rem;
+	font-size: 1rem;
 }
 
 div.wrap.gallery div.inner_wrap div.tips_container a.arrow {
@@ -327,22 +337,35 @@ div.wrap.white {
 	min-height: 1200px;
 }
 
-div.wrap.white div.inner_wrap div.article_img {
-	background-repeat: no-repeat;
-	background-size: 70% auto;
-	background-position: top center;
+div.wrap.white div.inner_wrap article {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
 	text-align: right;
+	width: 95%
 }
 
-div.wrap.white div.inner_wrap div.article_img p {
-	margin:0px auto;
-	font-size: 1.4rem;
-	padding: 10px;
+div.wrap.white div.inner_wrap article p {
+    margin: 0px;
+    font-size: 1rem;
+
 }
 
-div.wrap.white div.inner_wrap div.article_img p:first-of-type {
-	padding-top: 220px;
+div.wrap.white div.inner_wrap figure {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+	margin: 0px;
+	width:95%;
 
+}
+
+div.wrap.white div.inner_wrap figure img {
+	display: block;
+	padding-top: 20px;
+	margin-left: auto;
+	margin-right: auto;	
 }
 
 div.wrap.white div.inner_wrap > span {
@@ -357,7 +380,6 @@ div.wrap.white div.inner_wrap > span:first-of-type {
 	background-repeat: no-repeat;
 	background-position: center top;
 	background-size: 100% auto;
-	padding-top: 170px;
 	font-size: 1.3rem;
 }
 
@@ -373,39 +395,39 @@ div.wrap.blue div.inner_wrap div.form_container {
 
 footer {
 	background-color: black;
+	text-align: center;
 }
 
-footer div.inner_wrap div.copyright_container {
+footer div.copyright {
+	display: block;
+	background-color: black;
+	direction: ltr;
+}
+
+div.copyright span {
+	display: inline-block;
+	vertical-align: middle;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	padding-left: 40px;
 	background-image: url(../images/way2cu-color.svg);
 	background-repeat: no-repeat;
-	background-position: 5px center;
-	background-size: auto 50px;
-	padding: 10px;
-	padding-left: 60px;
+	background-position: left center;
+	background-size: 30px 34.5px;
+	font-size: 0.7em;
+	color: white;
 	text-align: left;
-	color: white;
-	direction: ltr;
-	margin: 0px auto;
+	width: 200px;
 }
 
-footer div.inner_wrap div.copyright_container a , footer div.inner_wrap div.copyright_container span {
+div.copyright span a {
 	display: inline-block;
-	vertical-align: top;
-	text-decoration: none;
-	color: white;
-	padding: 0px 2px;
-	transition: 0.3s all;
-}
-
-footer div.inner_wrap div.copyright_container a:nth-of-type(2) {
-	color: gold;
-}
-
-footer div.inner_wrap div.copyright_container a:hover {
-	color: #287fb8;
+	padding-left: 5px;
 	text-decoration: underline;
+	color:#449bb5;
+	transition:all 0.3s;
 }
 
-footer div.inner_wrap div.copyright_container span:nth-of-type(2) {
-	display: block;
+div.copyright span a:hover {
+	color:#5bc2d8;
 }
