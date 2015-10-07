@@ -2,7 +2,7 @@
 	<figure>
 		<img 
 			src="$params['image']" 
-			alt="['title']['$language']"
+			alt="$params['title'][$language]"
 			cms:eval="src,alt"
 		/>
 	</figure>	
