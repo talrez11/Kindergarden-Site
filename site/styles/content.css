@@ -501,3 +501,110 @@ div.copyright span a:hover {
 	color:#5bc2d8;
 }
 
+@media all and (max-width: 1024px) and (min-width: 768px){
+
+div.inner_wrap {
+    display: block;
+    width: auto;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative
+}
+
+header div.inner_wrap article {
+	width: 50%;
+}
+
+header div.inner_wrap article:before {
+	right:95%;
+}
+
+header div.inner_wrap article h3:after {
+    content: "";
+    position: absolute;
+    top: -40px;
+    right: 100%;
+    background-image: url(../images/ballon.svg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 450px 122px;
+    width: 450px;
+    height: 122px;
+}
+
+div.inner_wrap div.form_container form label input {
+	width: 170px;
+}
+
+div.wrap.girl {
+    background-position: -300px top;	
+}
+
+div.wrap.girl div.inner_wrap div.article {
+	width: 500px;
+}
+
+div.wrap.boy {
+    background-image: url(../images/background-boy.jpg);
+    background-repeat: no-repeat;
+    background-position: -686px 190px;
+    background-size: auto 600px;
+    background-color: #FEFBDC;
+    min-height: 600px;
+    position: relative;
+
+}
+
+div.wrap.boy:after {
+    content: "";
+    position: absolute;
+    bottom: -8px;
+    left: 0px;
+    width: 100%;
+    height: 100px;
+    background: linear-gradient(to bottom, rgba(229,229,229,0.07) 0%,rgba(221,239,165,1) 100%);
+}
+
+div.wrap.boy div.inner_wrap div.article {
+	width: 500px;
+    margin: 0px auto;
+    margin-right: 450px;
+    text-align: right;
+    padding-top: 10px;
+    padding-bottom: 10px;	
+}
+
+div.wrap.white div.inner_wrap article {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 800px;
+}
+
+div.wrap.white div.inner_wrap figure {
+    display:block;
+    text-align: center;
+    margin: 0px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 600px;
+}
+
+div.wrap.white {
+	min-height: 1750px;
+}
+
+div.wrap.white div.inner_wrap > span {
+	text-align: center;
+}
+
+div.wrap.white div.inner_wrap a.phone {
+	margin-right: auto;
+	margin-left: auto;
+}
+
+
+
+
+
+}
