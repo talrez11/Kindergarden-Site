@@ -95,6 +95,7 @@ Site.on_load = function() {
 		gallery.images.set_visible_count(3)
 		.controls.attach_next($('div.gallery_container a.arrow.next'))
 		.controls.attach_previous($('div.gallery_container a.arrow.previous'));
+		gallery.images.update();
 	};
 
 	if (Site.is_mobile())
