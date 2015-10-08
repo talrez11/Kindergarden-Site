@@ -1,13 +1,29 @@
 <document>
-	<a
-		href="$params['image']"
-		class="image direct"
-		cms:eval="href"
-		>
-		<img
-			src="gallery::getThumbnailById($params['id'], null, 350)"
-			alt="$params['title'][$language]"
-			cms:eval="src,alt"
-			/>
-		</a>
+	<cms:desktop>
+		<a
+			href="$params['image']"
+			class="image direct"
+			cms:eval="href"
+			>
+			<img
+				src="gallery::getThumbnailById($params['id'], null, 350)"
+				alt="$params['title'][$language]"
+				cms:eval="src,alt"
+				/>
+			</a>
+	</cms:desktop>
+	
+	<cms:mobile>
+		<a
+			href="$params['image']"
+			class="image direct"
+			cms:eval="href"
+			>
+			<img
+				src="gallery::getThumbnailById($params['id'], null, 80)"
+				alt="$params['title'][$language]"
+				cms:eval="src,alt"
+				/>
+		</a>	
+	</cms:mobile>	
 </document>
